@@ -23,18 +23,18 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 
 
-try {
-let TerraMenu = `╔═━「 *🤖 SNOW-MD BOT* 」━═╗
-║
-║ 🧑‍💻 𝗨𝘀𝗲𝗿 : ${pushname}
-║ 🔰 𝗠𝗼𝗱𝗲 :${config.MODE}
-║ 💠 𝗣𝗿𝗲𝗳𝗶𝘅 : ${config.PREFIX}
-║ 👑 𝗗𝗲𝘃 : /`JON SNOW\`
-║ 🛠️ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : /`1.0.0\`
-║ 🤖 𝗕𝗼𝘁-𝗡𝗮𝗺𝗲 :{config.BOT_NAME}
-║ 📡 ALWAYS ONLINE: ACTIVE
-║
-╚═➤ `Choose your command wisely...`
+try{
+let TerraMenu = `╭⭑━━➤ SNOW-MD
+┃╭───────────────
+‎┃│➺ *ᴜsᴇʀ :* ${pushname}
+‎┃│➺ *ᴍᴏᴅᴇ :* ${config.MODE}
+‎┃│➺ *ᴘʀᴇғɪx :* ${config.PREFIX}
+┃│➺ *ᴄʀᴇᴀᴛᴏʀ :* \`JON SNOW\`
+‎┃│➺ *ᴠᴇʀsɪᴏɴ :* \`1.0.0\`
+┃│➺ *ʙᴏᴛ-ɴᴀᴍᴇ :* ${config.BOT_NAME}
+┃│➺ *ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ :* ᴀᴄᴛɪᴠᴇ
+‎┃╰───────────────
+╰⭑━━━━━━━━━━━━━━⭑━━➤
 ```
 > *_snow-md ʙᴇsᴛ ʙᴏᴛ ᴡᴀ_*
 
