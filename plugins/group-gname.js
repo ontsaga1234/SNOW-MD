@@ -4,7 +4,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 
 cmd({
     pattern: "updategname",
-    alias: ["xtreme-name", "gname"],
+    alias: ["snow-name", "gname"],
     react: "📝",
     desc: "CHANGE THE GROUP NAME.",
     category: "group",
