@@ -5,8 +5,8 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 cmd({
     pattern: "removemembers",
     alias: ["kickall", "endgc", "endgroup"],
-    desc: "*ʀᴇᴍᴏᴠᴇ ᴀʟʟ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ*",
-    react: "📣",
+    desc: "*ʀᴇᴍᴏᴠᴇ ᴀʟʟ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ startin✅*",
+    react: "🗑️",
     category: "group",
     filename: __filename,
 }, 
@@ -31,10 +31,7 @@ async (conn, mek, m, {
             }
         }
 
-        reply("**⚠️ Action Initiated:*  
-`Removing all non-admin members from the group...`  
-🔒 *Only admins will remain. This operation cannot be undone.*  
-🚫 *Executing mass removal...*");
+        reply("*☑️ ᴀʟʟ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀs ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ sɪʟᴇɴᴛʟʏ by snow-md*");
     } catch (e) {
         console.error("Error:", e);
         reply("*⚠️ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇᴍᴏᴠɪɴɢ ɴᴏɴ-ᴀᴅᴍɪɴs*");
@@ -45,11 +42,8 @@ async (conn, mek, m, {
 cmd({
     pattern: "removeadmins",
     alias: ["kickadmins", "kickall3", "deladmins"],
-    desc: "**🚨 ADMIN WIPE INITIATED*  
-`Removing all admin members from the group...`  
-🛡️ *Bot and Bot Owner are excluded from this operation.*  
-⚔️ *Resetting the throne... Only true power remains*",
-    react: "🩸",
+    desc: "*ʀᴇᴍᴏᴠᴇ ᴀʟʟ ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ, ᴇxᴄʟᴜᴅɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ʙᴏᴛ ᴏᴡɴᴇʀ*",
+    react: "🚮",
     category: "group",
     filename: __filename,
 }, 
@@ -78,10 +72,7 @@ async (conn, mek, m, {
             }
         }
 
-        reply("**🚨 ADMIN WIPE INITIATED*  
-`Removing all admin members from the group...`  
-🛡️ *Bot and Bot Owner are excluded from this operation.*  
-⚔️ *Resetting the throne... Only true power remains.*");
+        reply("*☑️ ᴀʟʟ ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀs (ᴇxᴄᴇᴘᴛ ʙᴏᴛ ᴀɴᴅ ᴏᴡɴᴇʀ) ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ sɪʟᴇɴᴛʟʏ*");
     } catch (e) {
         console.error("Error:", e);
         reply("*⚠️ ᴇʀʀᴏʀ ᴡʜɪʟᴇ ʀᴇᴍᴏᴠɪɴɢ ᴀᴅᴍɪɴs*");
@@ -120,10 +111,7 @@ async (conn, mek, m, {
             }
         }
 
-        reply("*☑️ *🚨 ADMIN WIPE INITIATED*  
-`Removing all admin members from the group...`  
-🛡️ *Bot and Bot Owner are excluded from this operation.*  
-⚔️ *Resetting the throne... Only true power remains.*");
+        reply("*☑️ All ᴍᴇᴍʙᴇʀs (ᴇxᴄᴇᴘᴛ ʙᴏᴛ ᴀɴᴅ ᴏᴡɴᴇʀ) ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ sɪʟᴇɴᴛʟʏ*");
     } catch (e) {
         console.error("Error:", e);
         reply("*⚠️ ᴇʀʀᴏʀ ᴡʜɪʟᴇ ʀᴇᴍᴏᴠɪɴɢ ᴍᴇᴍʙᴇʀs*");
