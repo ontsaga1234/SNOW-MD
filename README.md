@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <img src="https://files.catbox.moe/rmcjwq.jpg" width="800"/>
+</p>
+
+<p align="center">
   <a href="https://github.com/jon-snow-tech-bot/SNOW-MD"><img src="https://img.shields.io/github/stars/jon-snow-tech-bot/SNOW-MD?style=flat-square&color=yellow"></a>
   <a href="https://github.com/jon-snow-tech-bot/SNOW-MD/fork"><img src="https://img.shields.io/github/forks/jon-snow-tech-bot/SNOW-MD?style=flat-square&color=lightblue"></a>
   <a href="https://whatsapp.com/channel/0029Vb9qyTY47XeJ7i0wcQ40"><img src="https://img.shields.io/badge/WhatsApp-Channel-25D366?style=flat-square&logo=whatsapp"></a>
