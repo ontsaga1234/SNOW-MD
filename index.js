@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("SNOW~MD~", '');
+const sessdata = config.SESSION_ID.replace("SNOW-MD", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -81,8 +81,8 @@ const app = express();
 const port = process.env.PORT || 9090;
   
   //=============================================
-
-async function connectToWA() {
+  
+  async function connectToWA() {
   console.log("Connecting to WhatsApp ⏳️...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
@@ -113,12 +113,12 @@ async function connectToWA() {
   console.log('Plugins installed successful ✅')
   console.log('SNOW-MD CONNECTED SUCCESSFULLY ✅')
   
-  let up = `╭──⧼⧼ 🤖 *SNOW-MD ᴠ1* ⧽⧽
+  let up = `╭──⧼⧼ 🤖 *snow-md ᴠ1* ⧽⧽
 ├─▸ *ᴜʟᴛʀᴀ sᴜᴘᴇʀ ғᴀsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ⚠️*  
-│     *ʙᴇsᴛ ʙᴏᴛ SNOW-MD* 
+│     *ʙᴇsᴛ ʙᴏᴛ snow-md* 
 ╰─➤ *ʏᴏᴜʀ sᴍᴀʀᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ 🍁!*  *ᴀᴅᴅ ᴄᴏᴍᴍᴇɴᴛᴍᴏʀᴇ ᴀᴄᴛɪᴏɴs*
 
-- *🖤 ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ SNOW-MD!* 
+- *🖤 ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ snow md!* 
 
 ╭──⧼⧼ 🔗 *ɪɴғᴏʀᴍᴀᴛɪᴏɴ* ⧽⧽  
 ├─ 🧩 *ᴘʀᴇғɪx:* = ${prefix}
@@ -126,7 +126,7 @@ async function connectToWA() {
 │      https://whatsapp.com/channel/0029VbB2p44KWEKt0C6sx225
 ├─ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*
 │    https://github.com/jon-snow-tech-bot/SNOW-MD
-╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ JON SNOW*`;
+╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀɪɴᴄᴇ xᴛʀᴇᴍᴇ*`;
     conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/rmcjwq.jpg` }, caption: up })
   }
   })
@@ -143,8 +143,7 @@ async function connectToWA() {
     }
   });
   //============================== 
-
-  conn.ev.on("group-participants.update", (update) => GroupEvents(conn, update));	  
+conn.ev.on("group-participants.update", (update) => GroupEvents(conn, update));	  
 	  
   //=============readstatus=======
         
@@ -503,7 +502,7 @@ conn.decodeJid = jid => {
     
     }
     //=====================================================
-    conn.sendFile = async(jid, PATH, fileName, quoted = {}, options = {}) => {
+conn.sendFile = async(jid, PATH, fileName, quoted = {}, options = {}) => {
       let types = await conn.getFile(PATH, true)
       let { filename, size, ext, mime, data } = types
       let type = '',
@@ -572,7 +571,21 @@ conn.decodeJid = jid => {
     * @returns
     */
     //=====================================================
-conn.sendImageAsSticker = async (jid, buff, options = {}) => {
+    conn.sendVideoAsSticker = async (jid, buff, options = {}) => {
+      let buffer;
+      if (options && (options.packname || options.author)) {
+        buffer = await writeExifVid(buff, options);
+      } else {
+        buffer = await videoToWebp(buff);
+      }
+      await conn.sendMessage(
+        jid,
+        { sticker: { url: buffer }, ...options },
+        options
+      );
+    };
+    //=====================================================
+    conn.sendImageAsSticker = async (jid, buff, options = {}) => {
       let buffer;
       if (options && (options.packname || options.author)) {
         buffer = await writeExifImg(buff, options);
