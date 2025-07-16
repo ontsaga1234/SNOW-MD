@@ -53,7 +53,7 @@ cmd({
 
         const dec = "*✅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴀᴅᴅᴇᴅ ᴜsᴇʀ ᴀs ᴛᴇᴍᴘᴏʀᴀʀʏ ᴏᴡɴᴇʀ*";
         await conn.sendMessage(from, {  // استفاده از await در اینجا درست است
-            image: { url: "https://files.catbox.moe/1rioah.jpg" },
+            image: { url: "https://files.catbox.moe/f0njy5.jpeg" },
             caption: dec
         }, { quoted: mek });
     } catch (err) {
@@ -92,7 +92,7 @@ cmd({
 
         const dec = "*✅ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ ᴜsᴇʀ ᴀs ᴛᴇᴍᴘᴏʀᴀʀʏ ᴏᴡɴᴇʀ*";
         await conn.sendMessage(from, {  // استفاده از await در اینجا درست است
-            image: { url: "https://files.catbox.moe/zvqby7.jpg" },
+            image: { url: "https://files.catbox.moe/3g1vjd.jpeg" },
             caption: dec
         }, { quoted: mek });
     } catch (err) {
@@ -133,7 +133,7 @@ cmd({
 
         // Send the message with an image and formatted caption
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/zvqby7.jpg" },
+            image: { url: "https://files.catbox.moe/xjzzsu.jpeg" },
             caption: listMessage
         }, { quoted: mek });
     } catch (err) {
