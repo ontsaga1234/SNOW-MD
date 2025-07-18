@@ -126,8 +126,8 @@ const port = process.env.PORT || 9090;
 │      https://whatsapp.com/channel/0029VbB2p44KWEKt0C6sx225
 ├─ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*
 │    https://github.com/jon-snow-tech-bot/SNOW-MD
-╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀɪɴᴄᴇ xᴛʀᴇᴍᴇ*`;
-    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/rmcjwq.jpg` }, caption: up })
+╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ jon snow*`;
+    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/p0m9ba.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
