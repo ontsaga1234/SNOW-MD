@@ -127,7 +127,7 @@ const port = process.env.PORT || 9090;
 ├─ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*
 │    https://github.com/jon-snow-tech-bot/SNOW-MD
 ╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ jon snow*`;
-    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/2rr54q.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/m7ogv7.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
