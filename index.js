@@ -83,7 +83,7 @@ const port = process.env.PORT || 9090;
   //=============================================
   
   async function connectToWA() {
-  console.log("Connecting to WhatsApp ⏳️...");
+  console.log("Connecting SNOW-MD to WhatsApp ⏳️...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
   
@@ -127,7 +127,7 @@ const port = process.env.PORT || 9090;
 ├─ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*
 │    https://github.com/jon-snow-tech-bot/SNOW-MD
 ╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ jon snow*`;
-    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/p0m9ba.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: ` https://files.catbox.moe/2rr54q.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
