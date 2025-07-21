@@ -115,7 +115,7 @@ node .
 
 🔗 ᴜsᴇғᴜʟ ʟɪɴᴋs
 
-[![Join Our WhatsApp Channel](https://img.shields.io/badge/Join%20Channel-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vb9qyTY47XeJ7i0wcQ40)
+[![Join Our WhatsApp Channel](https://img.shields.io/badge/Join%20Channel-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbB2p44KWEKt0C6sx225)
 ---
 
 👑 Credits
