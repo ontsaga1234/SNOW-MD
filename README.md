@@ -18,7 +18,7 @@
 
 **sᴇssɪᴏɴ ɪᴅ💫**
 
-[![SNOW-MD SESSION](https://img.shields.io/badge/SNOW%20-MD%20SESSION-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://snow-md-session-id-2.onrender.com/)
+[![SNOW-MD SESSION](https://img.shields.io/badge/SNOW%20-MD%20SESSION-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://snow-md-session-id-fzkx.onrender.com/)
 ---
 
 🧠 **ғᴇᴀᴛᴜʀᴇs**
